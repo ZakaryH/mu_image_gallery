@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `mubdata` (
+  `title` varchar(100) NOT NULL,
+  `timedate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `message` text NOT NULL,
+  `blog_id` int(100) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`blog_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;

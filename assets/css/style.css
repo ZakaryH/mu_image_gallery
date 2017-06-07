@@ -1,0 +1,242 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fafafa;
+}
+@media (min-width: 770px) {
+  nav .container {
+    width: 50%;
+  }
+}
+.navbar {
+  margin-bottom: 4rem;
+}
+.navbar .navbar-nav >li >a {
+  color: #111;
+}
+.navbar .navbar-nav >li >a:hover {
+  color: #29d;
+}
+.navbar .navbar-nav >li >a,
+.navbar-brand {
+  padding: 2.5rem 2rem;
+}
+.navbar .navbar-brand {
+  height: initial;
+  color: #111;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.33rem;
+}
+.navbar .navbar-brand:hover {
+  color: #29d;
+}
+.navbar .navbar-brand .glyphicon {
+  padding-right: 15px;
+  margin-right: 10px;
+  border-right: 1px solid #111;
+}
+.navbar .navbar-right .glyphicon {
+  font-size: 2rem;
+}
+form {
+  margin-bottom: 4em;
+}
+form h2 {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+label {
+  display: block;
+  padding-bottom: 1em;
+  letter-spacing: 1px;
+  max-width: 50%;
+}
+input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.js .inputfile + label {
+  font-size: 1.1em;
+  font-weight: 400;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  max-width: initial;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #999;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+.js .inputfile + label:hover {
+  opacity: 0.5;
+}
+.js .inputfile + label:focus + label {
+  background-image: linear-gradient(#636565, #3d3f3f 50%, #333434);
+  outline: 1px dotted #29d;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.no-js .inputfile + label {
+  display: none;
+}
+.btn-ig {
+  border: 1px solid #999;
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
+  background-color: transparent;
+  transition: 300ms;
+}
+.btn-ig:hover,
+.btn-ig.active,
+.btn-ig.focus {
+  opacity: 0.5;
+  color: #999;
+}
+.post-container {
+  margin-bottom: 2rem;
+}
+.post-container a {
+  transition: 300ms;
+  color: #000;
+}
+.post-container a:hover {
+  text-decoration: none;
+  color: #333;
+}
+.post-container .post-heading {
+  background-color: #fff;
+  padding: 1.4rem 2rem;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  position: relative;
+}
+.post-container .post-heading .author-name {
+  padding-left: 15px;
+}
+.post-container .post-title {
+  text-transform: capitalize;
+  display: inline-block;
+  color: #111;
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+.post-container .post-tag {
+  font-size: 1.5rem;
+}
+.post-container img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+.post-container .post-footer {
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.post-container .post-footer .author-name {
+  padding-right: 5px;
+}
+.post-container .post-footer .glyphicon {
+  font-size: 2rem;
+}
+.post-container .post-info a {
+  text-decoration: none;
+}
+.post-container .author-name,
+.individual-post .author-name {
+  margin: 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.post-container .user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #333;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.comments-section {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.lb-container {
+  padding: 0;
+}
+.user-avatar {
+  border-radius: 50%;
+  display: inline-block;
+}
+.album-user-name {
+  margin: 0 0 1.5rem;
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.albums-container {
+  padding-top: 4rem;
+}
+.albums-container img {
+  margin-bottom: 3rem;
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+}
+.individual-post {
+  padding-bottom: 10rem;
+}
+.individual-post .author-name {
+  padding-right: 15px;
+  color: #111;
+}
+.individual-post h2 {
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+.individual-post img {
+  max-width: 100%;
+  min-width: 100%;
+}
+.image-controls {
+  margin-bottom: 1.5rem;
+}
+.post-description {
+  padding: 2rem 0;
+}
+.post-comment {
+  margin-top: 4rem;
+}
+.post-comments-section {
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+.manage-images img {
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+.manage-images h3 {
+  margin-bottom: 1.5em;
+}
+footer {
+  margin-top: 4rem;
+  font-size: 1.33rem;
+}
+footer.navbar-default {
+  padding: 2rem;
+  margin-bottom: 0;
+}
+.float-right {
+  float: right;
+}

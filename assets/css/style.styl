@@ -1,0 +1,256 @@
+// viewport vars
+$tablet = "(min-width 500px)"
+$desktop = "(min-width 770px)"
+$large = "(min-width 990px)"
+$xl = "(min-width 1200px)"
+
+
+body
+	box-sizing border-box
+	font-size 16px
+	line-height 1.5
+	background-color #fafafa
+	
+// -------------------------------------Nav
+nav
+	.container
+		@media $desktop
+			width 50%
+
+.navbar
+	margin-bottom 4rem
+	.navbar-nav
+		>li
+			>a
+				color #111
+				&:hover
+					color #29d
+			>a
+			/.navbar-brand
+				padding 2.5rem 2rem
+
+	.navbar-brand
+		height initial
+		color #111
+		font-family: 'Pacifico', cursive;
+		font-size 2.33rem
+		&:hover
+			color #29d
+
+		
+		.glyphicon
+			padding-right 15px
+			margin-right 10px
+			border-right 1px solid #111
+	.navbar-right
+		.glyphicon
+			font-size 2rem
+// ---------------------------------form 
+form
+	margin-bottom 4em	
+	h2
+		margin-bottom 4rem
+		text-transform uppercase
+
+label
+	display block
+	padding-bottom 1em
+	letter-spacing 1px
+	max-width 50%
+	
+input[type="file"]
+	width 0.1px
+	height @width
+	opacity 0
+	overflow hidden
+	position absolute
+	z-index -1
+.js
+	.inputfile + label
+		font-size 1.1em
+		font-weight 400
+		// background-image linear-gradient(#6d7070, #474949 50%, #3d3f3f)
+		background-color transparent
+		display block
+		width 100%
+		font-weight 600
+		max-width initial
+		text-align center
+		vertical-align middle
+		border-radius 5px
+		padding 5px 10px
+		color #999
+		border 1px solid #999
+		cursor pointer
+		&:hover
+			// background-image linear-gradient(#636565, #3d3f3f 50%, #333434)
+			opacity 0.5
+		&:focus
+			+ label
+				background-image linear-gradient(#636565, #3d3f3f 50%, #333434)
+				outline 1px dotted #29d
+				outline -webkit-focus-ring-color auto 5px
+.no-js
+	.inputfile + label
+		display none
+// -----------------------------------btn
+
+.btn-ig
+	border 1px solid #999
+	color #999
+	font-weight 600
+	font-size 1.6rem
+	background-color transparent
+	transition 300ms
+	&:hover
+	&.active
+	&.focus
+		opacity 0.5
+		color #999
+
+// ---------------------------------- HOME
+
+
+		
+.post-container
+	
+	margin-bottom 2rem
+	a
+		transition 300ms
+		color #000
+		&:hover
+			text-decoration none
+			color #333
+	.post-heading
+		background-color #fff
+		padding 1.4rem 2rem
+		border 1px solid #ddd
+		border-bottom none
+		position relative
+		.author-name
+			padding-left 15px
+	
+	.post-title
+		text-transform capitalize
+		display inline-block
+		color #111
+		font-size 1.5rem
+		padding-right 5px
+	
+	.post-tag
+		font-size 1.5rem
+
+	img
+		width 100%
+		// height 200px
+		height auto
+		// max-width 300px
+		border 1px solid #ddd
+	.post-footer
+		background-color #fff
+		padding 2rem
+		border 1px solid #ddd
+		border-top none
+		
+		.author-name
+			padding-right 5px
+
+		.glyphicon
+			font-size 2rem
+		
+
+	.post-info
+		a
+			text-decoration none
+	.author-name
+		margin 0
+		display inline-block
+		font-weight bold
+		font-size 1.5rem
+			
+	.user-avatar
+		width 32px
+		height @width
+		border-radius 50%
+		background-color #333
+		border 1px solid #ccc
+		display inline-block
+.comments-section
+	margin-top 1.5rem
+	font-size 1.5rem	
+
+.lb-container
+	padding 0
+// .panel-heading
+// 	margin-top 15px
+// -------------------------------------upload
+
+//-----------------------------------------User album
+.user-avatar
+	border-radius 50%
+	display inline-block
+.album-user-name
+	margin 0 0 1.5rem
+	font-size 3rem
+	display inline-block
+	vertical-align top
+	
+.albums-container
+	padding-top 4rem
+	img
+		margin-bottom 3rem
+		max-width 100%
+		width 100%
+		height 300px
+
+// -------------------------------------Post
+.individual-post
+	padding-bottom 10rem
+	.author-name
+		@extend .post-container .author-name
+		padding-right 15px
+		color #111
+	
+	h2
+		text-transform capitalize
+		margin-bottom 4rem
+	img
+		max-width 100%
+		min-width 100%
+		
+.image-controls
+	margin-bottom 1.5rem
+.post-description
+	padding 2rem 0
+
+.post-comment
+	margin-top 4rem
+	
+.post-comments-section
+	border-top 1px solid #ddd
+	padding-top 2rem
+	margin-top 2rem
+//------------------------------------------Manage
+.manage-images
+	img
+		border 1px solid #ddd
+		// max-width 100%
+		// height 64px
+		// min-width 100%
+		margin-bottom 2rem
+	h3
+		margin-bottom 1.5em
+		
+// -----------------------------------------EDIT SINGLE
+
+// -----------------------footer
+footer
+	margin-top 4rem
+	font-size 1.33rem
+	&.navbar-default
+		padding 2rem
+		margin-bottom 0
+		
+
+.float-right
+	float right
